@@ -1,3 +1,6 @@
+[DEMO LINK](https://Andriyk0.github.io/stopwatch/)
+
+
 Angular 2+
 
 Реалізувати секундомір, який підраховує час у форматі "MM:SS"
