@@ -13,10 +13,20 @@ export class MainComponent implements OnInit {
   public min:number = 0;
   public sec:number = 0;
   public mil_sec:number = 0;
+  public count = 0;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  double() {
+    this.count++;
+    if (this.count === 2) {
+      this.start = false;
+    }
+
+    setTimeout(() => (this.count = 0), 500)
   }
 
   starting() {
@@ -31,10 +41,6 @@ export class MainComponent implements OnInit {
     this.min = 0;
     this.sec = 0;
     this.mil_sec = 0;
-  }
-
-  waiting() {
-    this.start = false;
   }
 
   reset() {
